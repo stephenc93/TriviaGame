@@ -1,0 +1,39 @@
+#background {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+}
+
+#background img {
+    position: absolute; 
+    top: 10; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.themeButton {
+    color: #ff981b;
+    font-family: "Arbutus", cursive;
+    font-size: 2em;
+}
+
+.pauseButton {
+    color: #ff981b;
+    font-family: "Arbutus", cursive;
+    font-size: 2em;
+}
+
+header{
+    background-color: ;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Arbutus', cursive;
+}

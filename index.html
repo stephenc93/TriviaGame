@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <title>""</title>
-</head>
-<style>
-</style>
-<body>
-    <div>
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial Quest</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="assets/javascript/app.js">
+
+</head>
+<body>
+    <div  id="background">
+        <img src="assets/media/background.jpg">
     </div>
-    <script>
-    </script>
+    <header>
+        <h1 class="center">Totally Trivial Trivia!</h1>
+        <div class="row center">
+                <a class="themeButton waves-effect waves-orange btn-flat">Play</a>
+                <a class="pauseButton waves-effect waves-orange btn-flat">Pause</a>
+                <audio id="backgroundSong">
+                    <source src="assets/media/audio.mp3">
+                </audio>
+            </div>
+    </header>
+    <div class="container">
+        <div class="row" id="timerDiv">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+        <div class="row" id="questionDiv">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+        <div class="row" id="answersDiv">
+            <div class="col-sm-10">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
