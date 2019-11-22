@@ -9,42 +9,66 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Arbutus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus|Work+Sans:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="assets/javascript/app.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </head>
+
 <body>
-    <div  id="background">
-        <img src="assets/media/background.jpg">
-    </div>
-    <header>
-        <h1 class="center">Totally Trivial Trivia!</h1>
-        <div class="row center">
-                <a class="themeButton waves-effect waves-orange btn-flat">Play</a>
-                <a class="pauseButton waves-effect waves-orange btn-flat">Pause</a>
-                <audio id="backgroundSong">
-                    <source src="assets/media/audio.mp3">
-                </audio>
-            </div>
-    </header>
+
     <div class="container">
-        <div class="row" id="timerDiv">
+        <div class="row center">
+            <h1 class="center">Totally Trivial Trivia!</h1>
+        </div>
+        <div class="row center songDiv">
+            <div class="col s4"></div>
+            <div class="col s4">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/enuOArEfqGo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                        <audio>
+                                <source src="assets/media/draw.mp3"></source>
+                        </audio>
+                </div>
+            </div>
+            <div class="col s4"></div>
+        </div>
+        <div class="buttonDiv row center">
             <div class="col-sm-12">
-
+                <a class="startButton waves-effect #bf360c deep-orange darken-4 btn-flat btn-large">Draw First!</a>
+                <audio id="draw" src="assets/media/draw.mp3"></audio>
             </div>
         </div>
-        <div class="row" id="questionDiv">
-            <div class="col-sm-12">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <div class="row" id="timerDiv">
+                            <div class="col-sm-12">
 
+                            </div>
+                        </div>
+                        <div class="row" id="questionDiv">
+                            <div class="col-sm-12">
+
+                            </div>
+                        </div>
+                        <div class="row" id="answersDiv">
+                            <div class="col-sm-10">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row" id="answersDiv">
-            <div class="col-sm-10">
 
-            </div>
-        </div>
     </div>
+
 </body>
+
 </html>

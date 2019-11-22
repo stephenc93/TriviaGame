@@ -1,30 +1,20 @@
-#background {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
-    height: 200%;
+html {
+    background-image: url("../media/background.jpg");
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
-#background img {
-    position: absolute; 
-    top: 10; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
-    min-width: 50%;
-    min-height: 50%;
+.songDiv {
+    display: block;
 }
 
-.themeButton {
-    color: #ff981b;
-    font-family: "Arbutus", cursive;
-    font-size: 2em;
+.video-container{
+    margin-top: 160px;
 }
 
-.pauseButton {
-    color: #ff981b;
+.startButton {
+    color: #ffffff;
     font-family: "Arbutus", cursive;
     font-size: 2em;
 }
@@ -34,6 +24,20 @@ header{
 }
 
 h1 {
-    color: #ffffff;
+    color: #b0390a;
     font-family: 'Arbutus', cursive;
+}
+
+.card {
+    z-index: 99;
+    margin-top: 35px;
+    display: none;
+    background-color: #505050;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+}
+
+.gif {
+    height: 250px;
 }
